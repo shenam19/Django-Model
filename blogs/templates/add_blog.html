@@ -1,0 +1,6 @@
+<form action="{% url 'addblogurl' %}" method="post" enctype="multipart/form-data">
+{% csrf_token %}
+{{msg}}
+{{form.as_div}}
+<button type="submit" >Add Blog</button>
+</form>

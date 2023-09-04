@@ -1,0 +1,23 @@
+<table>
+    <thead>
+        <tr>
+        <th>Title</th>
+        <th>Content</th>
+        <th>Date</th>
+        <th>Picture</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for i in alldata %}
+
+        <tr>
+            <td>{{i.title}}</td>
+            <td>{{i.content}}</td>
+            <td>{{i.date}}</td>
+            <td><img src="{{i.picture.url}}" ></td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
